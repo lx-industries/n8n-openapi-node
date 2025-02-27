@@ -329,6 +329,7 @@ test('petstore.json', () => {
         },
         {
             "default": 10,
+            "description": undefined,
             "displayName": "Id",
             "displayOptions": {
                 "show": {
@@ -341,6 +342,7 @@ test('petstore.json', () => {
                 }
             },
             "name": "id",
+            "options": undefined,
             "routing": {
                 "send": {
                     "property": "id",
@@ -353,6 +355,7 @@ test('petstore.json', () => {
         },
         {
             "default": "doggie",
+            "description": undefined,
             "displayName": "Name",
             "displayOptions": {
                 "show": {
@@ -365,6 +368,7 @@ test('petstore.json', () => {
                 }
             },
             "name": "name",
+            "options": undefined,
             "required": true,
             "routing": {
                 "send": {
@@ -378,6 +382,7 @@ test('petstore.json', () => {
         },
         {
             "default": "{\n  \"id\": 1,\n  \"name\": \"Dogs\"\n}",
+            "description": undefined,
             "displayName": "Category",
             "displayOptions": {
                 "show": {
@@ -390,6 +395,7 @@ test('petstore.json', () => {
                 }
             },
             "name": "category",
+            "options": undefined,
             "routing": {
                 "send": {
                     "property": "category",
@@ -401,7 +407,8 @@ test('petstore.json', () => {
             "type": "json"
         },
         {
-            "default": "[\n  null\n]",
+            "default": "[\n  \"string\"\n]",
+            "description": undefined,
             "displayName": "Photo Urls",
             "displayOptions": {
                 "show": {
@@ -414,6 +421,7 @@ test('petstore.json', () => {
                 }
             },
             "name": "photoUrls",
+            "options": undefined,
             "required": true,
             "routing": {
                 "send": {
@@ -426,7 +434,8 @@ test('petstore.json', () => {
             "type": "json"
         },
         {
-            "default": "[\n  {}\n]",
+            "default": "[\n  {\n    \"id\": 0,\n    \"name\": \"string\"\n  }\n]",
+            "description": undefined,
             "displayName": "Tags",
             "displayOptions": {
                 "show": {
@@ -439,6 +448,7 @@ test('petstore.json', () => {
                 }
             },
             "name": "tags",
+            "options": undefined,
             "routing": {
                 "send": {
                     "property": "tags",
@@ -509,6 +519,7 @@ test('petstore.json', () => {
         },
         {
             "default": 10,
+            "description": undefined,
             "displayName": "Id",
             "displayOptions": {
                 "show": {
@@ -521,6 +532,7 @@ test('petstore.json', () => {
                 }
             },
             "name": "id",
+            "options": undefined,
             "routing": {
                 "send": {
                     "property": "id",
@@ -533,6 +545,7 @@ test('petstore.json', () => {
         },
         {
             "default": "doggie",
+            "description": undefined,
             "displayName": "Name",
             "displayOptions": {
                 "show": {
@@ -545,6 +558,7 @@ test('petstore.json', () => {
                 }
             },
             "name": "name",
+            "options": undefined,
             "required": true,
             "routing": {
                 "send": {
@@ -558,6 +572,7 @@ test('petstore.json', () => {
         },
         {
             "default": "{\n  \"id\": 1,\n  \"name\": \"Dogs\"\n}",
+            "description": undefined,
             "displayName": "Category",
             "displayOptions": {
                 "show": {
@@ -570,6 +585,7 @@ test('petstore.json', () => {
                 }
             },
             "name": "category",
+            "options": undefined,
             "routing": {
                 "send": {
                     "property": "category",
@@ -581,7 +597,8 @@ test('petstore.json', () => {
             "type": "json"
         },
         {
-            "default": "[\n  null\n]",
+            "default": "[\n  \"string\"\n]",
+            "description": undefined,
             "displayName": "Photo Urls",
             "displayOptions": {
                 "show": {
@@ -594,6 +611,7 @@ test('petstore.json', () => {
                 }
             },
             "name": "photoUrls",
+            "options": undefined,
             "required": true,
             "routing": {
                 "send": {
@@ -606,7 +624,8 @@ test('petstore.json', () => {
             "type": "json"
         },
         {
-            "default": "[\n  {}\n]",
+            "default": "[\n  {\n    \"id\": 0,\n    \"name\": \"string\"\n  }\n]",
+            "description": undefined,
             "displayName": "Tags",
             "displayOptions": {
                 "show": {
@@ -619,6 +638,7 @@ test('petstore.json', () => {
                 }
             },
             "name": "tags",
+            "options": undefined,
             "routing": {
                 "send": {
                     "property": "tags",
@@ -746,7 +766,7 @@ test('petstore.json', () => {
             }
         },
         {
-            "default": "[\n  null\n]",
+            "default": "[\n  \"string\"\n]",
             "description": "Tags to filter by",
             "displayName": "Tags",
             "displayOptions": {
@@ -760,6 +780,7 @@ test('petstore.json', () => {
                 }
             },
             "name": "tags",
+            "options": undefined,
             "routing": {
                 "send": {
                     "property": "tags",
@@ -804,6 +825,7 @@ test('petstore.json', () => {
                 }
             },
             "name": "petId",
+            "options": undefined,
             "required": true,
             "type": "number"
         },
@@ -841,6 +863,7 @@ test('petstore.json', () => {
                 }
             },
             "name": "petId",
+            "options": undefined,
             "required": true,
             "type": "number"
         },
@@ -859,6 +882,7 @@ test('petstore.json', () => {
                 }
             },
             "name": "name",
+            "options": undefined,
             "routing": {
                 "send": {
                     "property": "name",
@@ -884,6 +908,7 @@ test('petstore.json', () => {
                 }
             },
             "name": "status",
+            "options": undefined,
             "routing": {
                 "send": {
                     "property": "status",
@@ -928,6 +953,7 @@ test('petstore.json', () => {
                 }
             },
             "name": "api_key",
+            "options": undefined,
             "routing": {
                 "request": {
                     "headers": {
@@ -952,6 +978,7 @@ test('petstore.json', () => {
                 }
             },
             "name": "petId",
+            "options": undefined,
             "required": true,
             "type": "number"
         },
@@ -989,6 +1016,7 @@ test('petstore.json', () => {
                 }
             },
             "name": "petId",
+            "options": undefined,
             "required": true,
             "type": "number"
         },
@@ -1007,6 +1035,7 @@ test('petstore.json', () => {
                 }
             },
             "name": "additionalMetadata",
+            "options": undefined,
             "routing": {
                 "send": {
                     "property": "additionalMetadata",
@@ -1073,6 +1102,7 @@ test('petstore.json', () => {
         },
         {
             "default": 10,
+            "description": undefined,
             "displayName": "Id",
             "displayOptions": {
                 "show": {
@@ -1085,6 +1115,7 @@ test('petstore.json', () => {
                 }
             },
             "name": "id",
+            "options": undefined,
             "routing": {
                 "send": {
                     "property": "id",
@@ -1097,6 +1128,7 @@ test('petstore.json', () => {
         },
         {
             "default": 198772,
+            "description": undefined,
             "displayName": "Pet Id",
             "displayOptions": {
                 "show": {
@@ -1109,6 +1141,7 @@ test('petstore.json', () => {
                 }
             },
             "name": "petId",
+            "options": undefined,
             "routing": {
                 "send": {
                     "property": "petId",
@@ -1121,6 +1154,7 @@ test('petstore.json', () => {
         },
         {
             "default": 7,
+            "description": undefined,
             "displayName": "Quantity",
             "displayOptions": {
                 "show": {
@@ -1133,6 +1167,7 @@ test('petstore.json', () => {
                 }
             },
             "name": "quantity",
+            "options": undefined,
             "routing": {
                 "send": {
                     "property": "quantity",
@@ -1145,6 +1180,7 @@ test('petstore.json', () => {
         },
         {
             "default": "",
+            "description": undefined,
             "displayName": "Ship Date",
             "displayOptions": {
                 "show": {
@@ -1157,6 +1193,7 @@ test('petstore.json', () => {
                 }
             },
             "name": "shipDate",
+            "options": undefined,
             "routing": {
                 "send": {
                     "property": "shipDate",
@@ -1208,6 +1245,7 @@ test('petstore.json', () => {
         },
         {
             "default": true,
+            "description": undefined,
             "displayName": "Complete",
             "displayOptions": {
                 "show": {
@@ -1220,6 +1258,7 @@ test('petstore.json', () => {
                 }
             },
             "name": "complete",
+            "options": undefined,
             "routing": {
                 "send": {
                     "property": "complete",
@@ -1264,6 +1303,7 @@ test('petstore.json', () => {
                 }
             },
             "name": "orderId",
+            "options": undefined,
             "required": true,
             "type": "number"
         },
@@ -1301,6 +1341,7 @@ test('petstore.json', () => {
                 }
             },
             "name": "orderId",
+            "options": undefined,
             "required": true,
             "type": "number"
         },
@@ -1325,6 +1366,7 @@ test('petstore.json', () => {
         },
         {
             "default": 10,
+            "description": undefined,
             "displayName": "Id",
             "displayOptions": {
                 "show": {
@@ -1337,6 +1379,7 @@ test('petstore.json', () => {
                 }
             },
             "name": "id",
+            "options": undefined,
             "routing": {
                 "send": {
                     "property": "id",
@@ -1349,6 +1392,7 @@ test('petstore.json', () => {
         },
         {
             "default": "theUser",
+            "description": undefined,
             "displayName": "Username",
             "displayOptions": {
                 "show": {
@@ -1361,6 +1405,7 @@ test('petstore.json', () => {
                 }
             },
             "name": "username",
+            "options": undefined,
             "routing": {
                 "send": {
                     "property": "username",
@@ -1373,6 +1418,7 @@ test('petstore.json', () => {
         },
         {
             "default": "John",
+            "description": undefined,
             "displayName": "First Name",
             "displayOptions": {
                 "show": {
@@ -1385,6 +1431,7 @@ test('petstore.json', () => {
                 }
             },
             "name": "firstName",
+            "options": undefined,
             "routing": {
                 "send": {
                     "property": "firstName",
@@ -1397,6 +1444,7 @@ test('petstore.json', () => {
         },
         {
             "default": "James",
+            "description": undefined,
             "displayName": "Last Name",
             "displayOptions": {
                 "show": {
@@ -1409,6 +1457,7 @@ test('petstore.json', () => {
                 }
             },
             "name": "lastName",
+            "options": undefined,
             "routing": {
                 "send": {
                     "property": "lastName",
@@ -1421,6 +1470,7 @@ test('petstore.json', () => {
         },
         {
             "default": "john@email.com",
+            "description": undefined,
             "displayName": "Email",
             "displayOptions": {
                 "show": {
@@ -1433,6 +1483,7 @@ test('petstore.json', () => {
                 }
             },
             "name": "email",
+            "options": undefined,
             "routing": {
                 "send": {
                     "property": "email",
@@ -1445,6 +1496,7 @@ test('petstore.json', () => {
         },
         {
             "default": "12345",
+            "description": undefined,
             "displayName": "Password",
             "displayOptions": {
                 "show": {
@@ -1457,6 +1509,7 @@ test('petstore.json', () => {
                 }
             },
             "name": "password",
+            "options": undefined,
             "routing": {
                 "send": {
                     "property": "password",
@@ -1469,6 +1522,7 @@ test('petstore.json', () => {
         },
         {
             "default": "12345",
+            "description": undefined,
             "displayName": "Phone",
             "displayOptions": {
                 "show": {
@@ -1481,6 +1535,7 @@ test('petstore.json', () => {
                 }
             },
             "name": "phone",
+            "options": undefined,
             "routing": {
                 "send": {
                     "property": "phone",
@@ -1506,6 +1561,7 @@ test('petstore.json', () => {
                 }
             },
             "name": "userStatus",
+            "options": undefined,
             "routing": {
                 "send": {
                     "property": "userStatus",
@@ -1537,6 +1593,7 @@ test('petstore.json', () => {
         },
         {
             "default": "{\n  \"id\": 10,\n  \"username\": \"theUser\",\n  \"firstName\": \"John\",\n  \"lastName\": \"James\",\n  \"email\": \"john@email.com\",\n  \"password\": \"12345\",\n  \"phone\": \"12345\",\n  \"userStatus\": 1\n}",
+            "description": undefined,
             "displayName": "Body",
             "displayOptions": {
                 "show": {
@@ -1549,6 +1606,7 @@ test('petstore.json', () => {
                 }
             },
             "name": "body",
+            "options": undefined,
             "routing": {
                 "request": {
                     "body": "={{ JSON.parse($value) }}"
@@ -1590,6 +1648,7 @@ test('petstore.json', () => {
                 }
             },
             "name": "username",
+            "options": undefined,
             "routing": {
                 "send": {
                     "property": "username",
@@ -1615,6 +1674,7 @@ test('petstore.json', () => {
                 }
             },
             "name": "password",
+            "options": undefined,
             "routing": {
                 "send": {
                     "property": "password",
@@ -1678,6 +1738,7 @@ test('petstore.json', () => {
                 }
             },
             "name": "username",
+            "options": undefined,
             "required": true,
             "type": "string"
         },
@@ -1715,11 +1776,13 @@ test('petstore.json', () => {
                 }
             },
             "name": "username",
+            "options": undefined,
             "required": true,
             "type": "string"
         },
         {
             "default": 10,
+            "description": undefined,
             "displayName": "Id",
             "displayOptions": {
                 "show": {
@@ -1732,6 +1795,7 @@ test('petstore.json', () => {
                 }
             },
             "name": "id",
+            "options": undefined,
             "routing": {
                 "send": {
                     "property": "id",
@@ -1744,6 +1808,7 @@ test('petstore.json', () => {
         },
         {
             "default": "theUser",
+            "description": undefined,
             "displayName": "Username",
             "displayOptions": {
                 "show": {
@@ -1756,6 +1821,7 @@ test('petstore.json', () => {
                 }
             },
             "name": "username",
+            "options": undefined,
             "routing": {
                 "send": {
                     "property": "username",
@@ -1768,6 +1834,7 @@ test('petstore.json', () => {
         },
         {
             "default": "John",
+            "description": undefined,
             "displayName": "First Name",
             "displayOptions": {
                 "show": {
@@ -1780,6 +1847,7 @@ test('petstore.json', () => {
                 }
             },
             "name": "firstName",
+            "options": undefined,
             "routing": {
                 "send": {
                     "property": "firstName",
@@ -1792,6 +1860,7 @@ test('petstore.json', () => {
         },
         {
             "default": "James",
+            "description": undefined,
             "displayName": "Last Name",
             "displayOptions": {
                 "show": {
@@ -1804,6 +1873,7 @@ test('petstore.json', () => {
                 }
             },
             "name": "lastName",
+            "options": undefined,
             "routing": {
                 "send": {
                     "property": "lastName",
@@ -1816,6 +1886,7 @@ test('petstore.json', () => {
         },
         {
             "default": "john@email.com",
+            "description": undefined,
             "displayName": "Email",
             "displayOptions": {
                 "show": {
@@ -1828,6 +1899,7 @@ test('petstore.json', () => {
                 }
             },
             "name": "email",
+            "options": undefined,
             "routing": {
                 "send": {
                     "property": "email",
@@ -1840,6 +1912,7 @@ test('petstore.json', () => {
         },
         {
             "default": "12345",
+            "description": undefined,
             "displayName": "Password",
             "displayOptions": {
                 "show": {
@@ -1852,6 +1925,7 @@ test('petstore.json', () => {
                 }
             },
             "name": "password",
+            "options": undefined,
             "routing": {
                 "send": {
                     "property": "password",
@@ -1864,6 +1938,7 @@ test('petstore.json', () => {
         },
         {
             "default": "12345",
+            "description": undefined,
             "displayName": "Phone",
             "displayOptions": {
                 "show": {
@@ -1876,6 +1951,7 @@ test('petstore.json', () => {
                 }
             },
             "name": "phone",
+            "options": undefined,
             "routing": {
                 "send": {
                     "property": "phone",
@@ -1901,6 +1977,7 @@ test('petstore.json', () => {
                 }
             },
             "name": "userStatus",
+            "options": undefined,
             "routing": {
                 "send": {
                     "property": "userStatus",
@@ -1945,6 +2022,7 @@ test('petstore.json', () => {
                 }
             },
             "name": "username",
+            "options": undefined,
             "required": true,
             "type": "string"
         }
