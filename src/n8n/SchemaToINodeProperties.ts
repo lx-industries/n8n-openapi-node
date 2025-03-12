@@ -39,9 +39,9 @@ export class N8NINodeProperties {
     }
 
     fromSchema(schema: Schema): FromSchemaNodeProperty {
-        schema = this.refResolver.resolve<OpenAPIV3.SchemaObject>(schema)
+        schema = this.refResolver.resolve<OpenAPIV3.SchemaObject>(schema);
         let type: NodePropertyTypes;
-        let defaultValue = this.schemaExample.extractExample(schema)
+        let defaultValue = this.schemaExample.extractExample(schema);
 
         switch (schema.type) {
             case 'boolean':
@@ -58,8 +58,20 @@ export class N8NINodeProperties {
                 defaultValue = defaultValue !== undefined ? JSON.stringify(defaultValue, null, 2) : '{}';
                 break;
             case 'array':
-                type = 'json';
-                defaultValue = defaultValue !== undefined ? JSON.stringify(defaultValue, null, 2) : '[]';
+                let schemaAsArray = schema as any;
+                if (schemaAsArray.items && schemaAsArray.items.enum && schemaAsArray.items.enum.length > 0) {
+                    type = 'multiOptions';
+                    options = schemaAsArray.items.enum.map((value: string) => {
+                        return {
+                            name: lodash.startCase(value),
+                            value: value,
+                        };
+                    });
+                    defaultValue = defaultValue !== undefined ? defaultValue : [];
+                } else {
+                    type = 'json';
+                    defaultValue = defaultValue !== undefined ? JSON.stringify(defaultValue, null, 2) : '[]';
+                }
                 break;
             case 'number':
             case 'integer':
