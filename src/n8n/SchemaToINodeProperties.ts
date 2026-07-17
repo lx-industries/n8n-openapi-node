@@ -65,9 +65,11 @@ export class N8NINodeProperties {
                 break;
             case 'array':
                 let schemaAsArray = schema as any;
-                if (schemaAsArray.items && schemaAsArray.items.enum && schemaAsArray.items.enum.length > 0) {
+                // items may be a $ref (e.g. to an enum schema) - resolve it before inspecting
+                const items = schemaAsArray.items ? this.refResolver.resolve<any>(schemaAsArray.items) : undefined;
+                if (items && items.enum && items.enum.length > 0) {
                     type = 'multiOptions';
-                    options = schemaAsArray.items.enum.map((value: string) => {
+                    options = items.enum.map((value: string) => {
                         return {
                             name: lodash.startCase(value),
                             value: value,
@@ -134,7 +136,7 @@ export class N8NINodeProperties {
                     send: {
                         type: 'query',
                         property: parameter.name,
-                        value: fieldSchemaKeys.type === "multiOptions" && !parameter.explode ? "={{ $value.join(',') }}" : '={{ $value }}',
+                        value: fieldSchemaKeys.type === "multiOptions" && !parameter.explode ? "={{ Array.isArray($value) ? $value.join(',') : $value }}" : '={{ $value }}',
                         propertyInDotNotation: false,
                     },
                 };
