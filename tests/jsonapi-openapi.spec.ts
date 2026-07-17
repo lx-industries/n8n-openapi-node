@@ -118,7 +118,7 @@ test('petstore.json', () => {
                 "send": {
                     "type": "query",
                     "property": "fields[model]",
-                    "value": "={{ $value.join(',') }}",
+                    "value": "={{ Array.isArray($value) ? $value.join(',') : $value }}",
                     "propertyInDotNotation": false
                 }
             },
@@ -155,7 +155,43 @@ test('petstore.json', () => {
                 "send": {
                     "type": "query",
                     "property": "include",
-                    "value": "={{ $value.join(',') }}",
+                    "value": "={{ Array.isArray($value) ? $value.join(',') : $value }}",
+                    "propertyInDotNotation": false
+                }
+            },
+            "displayOptions": {
+                "show": {
+                    "resource": [
+                        "Model"
+                    ],
+                    "operation": [
+                        "Create Model"
+                    ]
+                }
+            }
+        },
+        {
+            "displayName": "Sort",
+            "name": "sort",
+            "default": [
+                "id"
+            ],
+            "type": "multiOptions",
+            "options": [
+                {
+                    "name": "Id",
+                    "value": "id"
+                },
+                {
+                    "name": "Name",
+                    "value": "name"
+                }
+            ],
+            "routing": {
+                "send": {
+                    "type": "query",
+                    "property": "sort",
+                    "value": "={{ Array.isArray($value) ? $value.join(',') : $value }}",
                     "propertyInDotNotation": false
                 }
             },

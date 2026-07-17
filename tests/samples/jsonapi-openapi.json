@@ -53,6 +53,17 @@
               }
             },
             "explode": false
+          },
+          {
+            "name": "sort",
+            "in": "query",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/ModelSortField"
+              }
+            },
+            "explode": false
           }
         ],
         "requestBody": {
@@ -253,7 +264,7 @@
     "schemas": {
       "ModelComponentType": {
         "type": "integer",
-        "description": "The datatype of the model’s components.",
+        "description": "The datatype of the model\u2019s components.",
         "enum": [
           0,
           1,
@@ -284,7 +295,7 @@
           },
           "componentType": {
             "$ref": "#/components/schemas/ModelComponentType",
-            "description": "The datatype of the model’s components."
+            "description": "The datatype of the model\u2019s components."
           },
           "count": {
             "type": "integer",
@@ -294,7 +305,7 @@
           },
           "type": {
             "$ref": "#/components/schemas/ModelType",
-            "description": "Specifies the model’s type."
+            "description": "Specifies the model\u2019s type."
           },
           "array": {
             "type": [
@@ -480,7 +491,7 @@
               },
               {
                 "$ref": "#/components/schemas/ModelType",
-                "description": "The model’s type."
+                "description": "The model\u2019s type."
               }
             ]
           },
@@ -722,6 +733,13 @@
             "type": "string"
           }
         }
+      },
+      "ModelSortField": {
+        "type": "string",
+        "enum": [
+          "id",
+          "name"
+        ]
       }
     }
   },
